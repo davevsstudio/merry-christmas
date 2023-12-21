@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+</head>
+<style>
+    :root{
+	--green: #27ae60;
+	--black: #192a56;
+	--light-color:#666;
+	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .1rem solid #aaa;
+    --light-bg:#f3efec;
+    --dark-bg:rgba(0,0,0.7);
+    --primary-color:#8a6d46;
+	--bg-black-100:rgba(31, 31, 31, 0.9);
+	--bg-white-100:#ddd;
+	--bg-white-25:#f5f5f5f5;
+	--bg-black-10:#fff;
+	--text-black-900:#000;
+	--text-black-700:rgb(37, 37, 37);
+	--text-black-600:rgb(172, 172, 172);
+	--text-black-400:rgb(221, 221, 221);
+	--text-black-700:rgb(37, 37, 37);
+	--text-black-300:#f5f5f5;
+}
+
+
+*{
+	font-family: sans-serif;
+	margin: 0; padding: 0;
+	text-decoration: none;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+span{
+	color: #27ae60;
+}
+.sub-heading{
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 1rem;
+	color: var(--black);
+}
+.heading{
+	text-align: center;
+	font-size: 2.5rem;
+	padding-bottom: 1rem;
+	color: #27ae60;
+	text-transform: uppercase;
+}
+.btn{
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 1rem;
+	color: #000;
+	background: var(--black);
+	border-radius: .5rem;
+	cursor: pointer;
+	padding: .8rem 2rem;
+}
+
+.btn:hover{
+	background-color: #27ae60;
+	color: #fff;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	box-shadow: var(--box-shadow);
+	padding: 20px 30px;
+	position: relative;
+}
+
+.logo{
+	font-size: 30px;
+	color: red;
+	font-weight: bolder;
+}
+.logo img{
+	width: 40px;
+}
+
+.toggle-button{
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.toggle-button .bar{
+	width: 35px;
+	height: 4px;
+	background-color: #000;
+	border-radius: 5px;
+	margin: 3px 0px;
+}
+
+.nav-links{
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li{
+	margin-right: 25px;
+}
+
+.nav-links li a{
+	font-size: 17px;
+	color: var(--light-color);
+	border-radius: .5rem;
+	padding: .5rem 1.5rem;
+	transition: 0.4s ease;
+}
+.nav-links li .active,
+.nav-links li a:hover{
+	background-color: var(--green);
+	color: #fff;
+}
+
+
+
+
+ .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+	gap: 1.5rem;
+}
+
+.images  .box-container .box{
+	overflow: hidden;
+	border-radius: .5rem;
+	box-shadow: var(--box-shadow);
+	background: #fff;
+}
+
+.images .box-container .box video,
+.images  .box-container .box img{
+	height: 25rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.images  .box-container .box .content{
+	padding: 2rem;
+}
+
+.images  .box-container .box .content .icons{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	border-bottom: var(--border);
+}
+
+.images  .box-container .box .content .icons a{
+	color: var(--background-color);
+	font-size: 1.4rem;
+	font-weight: bolder;
+}
+
+.images  .box-container .box .content h3{
+	line-height: 1.8;
+	color: var(--primary-color);
+	font-size: 1.4rem;
+	padding: .5rem 0;
+}
+
+
+.images .box-container .box .content p{
+	line-height: 1.8;
+	color: var(--hover);
+	font-size: 1rem;
+	padding: .5rem 0;
+}
+
+</style>
+<body>
+        <!--header section starts-->
+  <header class="navbar">
+    <a href="index.html" class="logo"><img src="santa-hat.png" alt="">Merry Christmas</a>
+    <div class="toggle-button" id="toggleButton">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"  >Home</a></li>
+      <li><a href="about.html">About Christmas</a></li>
+      <li><a href="images.html" class="active">Images</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="message.html">Christmas Message</a></li>
+    </ul>
+
+  </header>
+
+  <!-- blogs section start-->
+<section class="images">
+    <h1 class="heading">Tribearc Memories</h1>
+    <div class="box-container">
+  
+
+        <div class="box">
+            <img src="379310889_286991084182503_2720164139211505737_n.jpg" alt="">
+        </div>
+
+
+
+        <div class="box">
+            <img src="379308550_286991217515823_1047140080781590983_n.jpg" alt="">
+        </div>
+
+
+        <div class="box">
+            <img src="371009696_276294685252143_700528849239828521_n.jpg" alt="">
+        </div>
+  
+      <div class="box">
+        <img src="355129202_235711355977143_1127353130395371685_n.jpg" alt="">
+    </div>
+  
+      <div class="box">
+        <img src="354538885_235711269310485_793741306770497275_n.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="355136711_235711469310465_3738744139096173479_n.jpg" alt="">
+    </div>
+
+	<div class="box">
+        <img src="legends.jpg" alt="">
+    </div>
+
+	<div class="box">
+        <img src="guy.jpg" alt="">
+    </div>
+
+	<div class="box">
+        <img src="girls.jpg" alt="">
+    </div>
+
+	<div class="box">
+        <img src="star techer.jpg" alt="">
+    </div>
+
+	    <div class="box">
+        <img src="1697661133876.jpg" alt="">
+    </div>
+
+	<div class="box">
+        <img src="mr ope.jpg" alt="">
+    </div>
+
+	<div class="box">
+        <img src="good_looking_guys.jpg" alt="">
+    </div>
+
+	<div class="box">
+        <img src="mrs rita.jpg" alt="">
+    </div>
+
+
+
+    <div class="box">
+        <video src="379558054_2281671435354868_6021507878269748076_n.mp4" controls></video>
+    </div>
+
+    <div class="box">
+        <video src="sport.mp4" controls></video>
+    </div>
+
+    
+
+  </section>
+
+</body>
+</html>

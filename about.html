@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+	--green: #27ae60;
+	--black: #192a56;
+	--light-color:#666;
+	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .1rem solid #aaa;
+    --light-bg:#f3efec;
+    --dark-bg:rgba(0,0,0.7);
+    --primary-color:#8a6d46;
+	--bg-black-100:rgba(31, 31, 31, 0.9);
+	--bg-white-100:#ddd;
+	--bg-white-25:#f5f5f5f5;
+	--bg-black-10:#fff;
+	--text-black-900:#000;
+	--text-black-700:rgb(37, 37, 37);
+	--text-black-600:rgb(172, 172, 172);
+	--text-black-400:rgb(221, 221, 221);
+	--text-black-700:rgb(37, 37, 37);
+	--text-black-300:#f5f5f5;
+}
+
+
+*{
+	font-family: sans-serif;
+	margin: 0; padding: 0;
+	text-decoration: none;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+span{
+	color: #27ae60;
+}
+.sub-heading{
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 1rem;
+	color: var(--black);
+}
+.heading{
+	text-align: center;
+	font-size: 2.5rem;
+	padding-bottom: 1rem;
+	color: #27ae60;
+	text-transform: uppercase;
+}
+.btn{
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 1rem;
+	color: #000;
+	background: var(--black);
+	border-radius: .5rem;
+	cursor: pointer;
+	padding: .8rem 2rem;
+}
+
+.btn:hover{
+	background-color: #27ae60;
+	color: #fff;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	box-shadow: var(--box-shadow);
+	padding: 20px 30px;
+	position: relative;
+}
+
+.logo{
+	font-size: 30px;
+	color: red;
+	font-weight: bolder;
+}
+.logo img{
+	width: 60px;
+}
+
+.toggle-button{
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.toggle-button .bar{
+	width: 35px;
+	height: 4px;
+	background-color: #000;
+	border-radius: 5px;
+	margin: 3px 0px;
+}
+
+.nav-links{
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li{
+	margin-right: 25px;
+}
+
+.nav-links li a{
+	font-size: 17px;
+	color: var(--light-color);
+	border-radius: .5rem;
+	padding: .5rem 1.5rem;
+	transition: 0.4s ease;
+}
+.nav-links li .active,
+.nav-links li a:hover{
+	background-color: var(--green);
+	color: #fff;
+}
+
+.about .row{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(13rem, 2fr));
+	gap: 0.6rem;
+	align-items: center;
+}
+.about .row .image{
+	flex: 1 1 45rem;
+}
+.about .row .image img{
+	width: 25%;
+}
+.about .row .content{
+	flex: 1 1 45rem;
+}
+.about .row .content h3{
+	color: red;
+	font-size: 2.5rem;
+	padding: .5rem 0;
+}
+.about .row .content p{
+	color: #000;
+	font-size: 1.2rem;
+	padding: .5rem 0;
+	line-height: 2;
+}
+
+.about video{
+	padding-top: 20px;
+	width: 100%;
+}
+
+
+
+</style>
+<body>
+
+          <!--header section starts-->
+  <header class="navbar">
+    <a href="index.html" class="logo"><img src="santa-hat.png" alt="">Merry Christmas</a>
+    <div class="toggle-button" id="toggleButton">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"  >Home</a></li>
+      <li><a href="about.html" class="active">About Christmas</a></li>
+      <li><a href="images.html">Images</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="blog.html">Christmas Greetings</a></li>
+    </ul>
+
+  </header>
+
+       <!--about us section starts-->
+<section class="about">
+    <h3 class="sub-heading">About Us</h3>
+    <h1 class="heading">How Christmas All Started</h1>
+    <div class="row">
+      <div class="image">
+        <img src="2150977046.jpg" alt=""  style="width: 70%;  border-radius: 5rem;">
+      </div>
+      <div class="content">
+        <h3>All About Christmas</h3>
+        <p style="color: aqua;">Christmas, Christian festival celebrating the birth of Jesus. December 25 has become widely accepted as the date of Jesus’ birth. Christmas has also become a secular family holiday that is observed by Christians and non-Christians, is marked by the exchange of gifts, and features the mythical figure of Santa Claus. </p>
+        
+      </div>
+  
+    </div>
+    <video src="Story of Jesus Christ _ AI Animation.mp4" controls autoplay></video>
+  </section>
+  <!--about us section ends-->
+</body>
+</html>
